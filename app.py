@@ -13,7 +13,7 @@ from ktrain import text
 # SENTIMENT ANALYSIS 
 from PIL import Image
 
-image = Image.open('/images/pocket_aces_logo.jpg')
+image = Image.open('pocket_aces_logo.jpg')
 st.image(image)
 
 st.title("SENTIMENT ANALYSIS")
@@ -83,7 +83,7 @@ if uploaded_file is not None:
 
 
 
-    predictor = ktrain.load_predictor('/content/drive/MyDrive/Jan_11/prepr_Jan_12')
+    predictor = ktrain.load_predictor('prepr_Jan_18')
 
     for i in range(len(df)):
       print(i)

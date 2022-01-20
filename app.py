@@ -55,9 +55,7 @@ if uploaded_file is not None:
       print(i)
       sent = df['Comment'][i]
       sent=str(sent)
-      #sent = re.sub("[^a-zA-Z]",  # Search for all non-letters
-      #                      " ",          # Replace all non-letters with spaces
-      #                      str(sent))
+      
       sent = clean(sent)
       df["Comment"][i]=sent
       if len(sent)<160:
@@ -83,7 +81,7 @@ if uploaded_file is not None:
 
 
 
-    predictor = ktrain.load_predictor('prepr_Jan_18')
+    predictor = ktrain.load_predictor('prepr_Jan_18/')
 
     for i in range(len(df)):
       print(i)

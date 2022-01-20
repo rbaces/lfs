@@ -81,7 +81,7 @@ if uploaded_file is not None:
 
 
 
-    predictor = ktrain.load_predictor('prepr_Jan_18/')
+    predictor = ktrain.load_predictor('prepr_Jan_18')
 
     for i in range(len(df)):
       print(i)
